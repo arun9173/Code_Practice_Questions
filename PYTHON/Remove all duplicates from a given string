@@ -3,12 +3,12 @@ output : arun
 
 ######################## PRACTICE CODE ##############################333
 
-temp = input("enter string :")
-dup = ""
-for i in temp:
-    if (i in dup):
+s = input("enter string :")
+temp = ""
+for i in s:
+    if (i in temp):
         pass
     else:
-        dup = dup + i
+        temp = temp + i
 
-print(dup)
+print(temp)
