@@ -1,0 +1,14 @@
+input : aarrunn
+output : arun
+
+######################## PRACTICE CODE ##############################333
+
+temp = input("enter string :")
+dup = ""
+for i in temp:
+    if (i in dup):
+        pass
+    else:
+        dup = dup + i
+
+print(dup)
