@@ -1,0 +1,22 @@
+Description:-
+
+Write a Python program that prints the length of a string "s" is variable name.
+
+🔹 Expected Output:
+input : ""
+output: 0
+
+input : "H"
+ouptut: 1
+
+input : "hello"
+output : 5
+
+########################################## PRACTICE CODE ###########################
+
+s = input()
+print(len(s))
+
+########################################## PRACTICE CODE - 2 ############################
+
+s = print(len(input()))
