@@ -1,0 +1,26 @@
+Sample 1:
+Input
+3
+1
+4
+99
+Output
+15
+60
+1485
+
+Explanation:
+Test Case 1:Since, he does only 1 set of squats, the total number of squats done by him is 
+15.
+
+Test Case 2: Since, he does 4 sets of squats, the total number of squats is 
+15+15+15+15=60.
+
+------------------------------------- PRACTICE CODE -----------------------------
+
+testcase = int(input())
+
+while not testcase == 0:
+    squats = int(input())
+    print( squats * 15)
+    testcase -=1
