@@ -1,0 +1,44 @@
+input :
+4
+1 4
+3 4
+4 2
+2 6
+
+output :
+NO
+YES
+NO
+YES
+------------------------------------
+Explanation:
+
+Test case 1
+ The sum of numbers on the dice is 1+4=5
+1+4=5 which is smaller than 6. Thus, the turn is not good.
+
+Test case 2
+The sum of numbers on the dice is 3+4=7
+3+4=7 which is greater than 6 . Thus, the turn is good.
+
+Test case3: 
+The sum of numbers on the dice is 4+2=6
+4+2=6 which is equal to 6. Thus, the turn is not good.
+
+Test case 4: 
+The sum of numbers on the dice is 2+6=8
+2+6=8 which is greater than 6. Thus, the turn is good.
+
+------------------------------------------------------------- PRACTICE CODE -----------------------------------
+
+testcase = int(input())
+while not testcase == 0:
+    list = input().split()
+    temp1 = int(list[0])
+    temp2 = int(list[1])
+    num = temp1+temp2
+    if num <= 6:
+        print("NO")
+    else:
+        print("YES")
+    testcase -= 1
