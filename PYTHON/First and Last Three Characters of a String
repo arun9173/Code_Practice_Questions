@@ -1,0 +1,26 @@
+ Description:
+Write a Python program that prints the first and last three characters of the string s as a single string.
+
+If the string has less than six characters, print an empty string (blank output).
+
+------------------------ code --------------------------------------
+
+message = input("enter anything in string : ")
+new_string = ""
+count = len(message)
+i=3
+if message != "" and len(message) > 6:
+  for index in range(3):
+    new_string += message[index]
+  while not i==0:
+    new_string+= message[count-i]
+    i -= 1
+
+  print(new_string)
+
+else:
+  print("''")
+
+------------------------------- output -------------------
+enter anything in string : Amazing
+Amaing
