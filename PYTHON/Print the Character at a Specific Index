@@ -1,0 +1,35 @@
+Description:
+Write a Python program that prints the character at index i in the string s.
+
+If the index is out of range, the program should print "i is out of range"
+
+If the string is empty, the program should print "Empty String"
+
+--------------------------------------------- code ------------------------------------
+ask = input ("enter something : ")
+if ask != "":
+  index = int(input("enter index wanna see: "))
+  ask_len = len(ask)
+  if index > ask_len:
+    print("i is out of range")
+  else:
+    print(ask[index-1])
+else:
+  print("string is empty")
+  
+------------------- output ---------------
+  
+enter something : hello
+enter index wanna see: 4
+l
+
+or
+
+enter something : 
+string is empty
+
+or
+
+enter something : arun
+enter index wanna see: 8
+i is out of range
