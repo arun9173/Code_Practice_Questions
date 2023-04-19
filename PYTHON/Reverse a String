@@ -1,0 +1,22 @@
+Description:
+Write a Python Program that prints the reversed version of a string.
+
+The program must preserve uppercase and lowercase letters.
+
+If the string is empty, print it intact.
+
+------------------------------- code --------------------------------
+
+message = input("enter anything in string : ")
+count = len(message)
+new_string = ""
+while not count == 0:
+  new_string += message[count-1]
+  count -= 1
+
+print(new_string)
+
+-------------------------- output ------------------------------------
+
+enter anything in string : Arun kumar Singh
+hgniS ramuk nurA
