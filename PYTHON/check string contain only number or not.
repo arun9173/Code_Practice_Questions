@@ -1,0 +1,29 @@
+Description:
+Write a Python program that check if a string only contains numbers.
+
+If it does, print True. Else, print False.
+
+
+---------------------------- code --------------------------------
+
+temp = input("enter anything : ")
+
+if temp.isdigit() == True:
+    print("True")
+else:
+    print("False")
+    
+-------------------------------------------- output --------------------
+
+enter anything : kbdkd
+False
+
+or
+
+enter anything : 152663
+True
+
+or
+
+enter anything : 12hdj6373
+False
