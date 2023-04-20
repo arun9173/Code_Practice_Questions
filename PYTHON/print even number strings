@@ -1,0 +1,40 @@
+Description:
+Write a Python program that prints the string s without the characters located at even indices.
+
+If the string is empty or only has one character, print it without any changes.
+
+--------------------------------- code ----------------------------------
+
+str = input("enter string : ")
+count = len(str)
+new_str = ""
+temp = 1
+
+if len(str) == 1:
+    print(str)
+
+elif str != "":
+    for index in range(count):
+        if temp % 2 == 0:
+            new_str += str[index]
+        temp += 1
+    print(new_str)
+
+else:
+    print("''")
+    
+    
+------------------------------------ output ----------------------------------
+
+enter string : 
+''
+
+or
+
+enter string : A
+A
+
+or
+
+enter string : coding
+oig
