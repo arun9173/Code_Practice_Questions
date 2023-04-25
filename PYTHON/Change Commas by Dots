@@ -1,0 +1,12 @@
+escription:
+Write a Python program that prints a version of the string s with all commas replaced by dots.
+
+----------------------- code ---------------------------------------
+
+text = input("enter string: ")
+print(text.replace(',', '.'))
+
+-------------------- output --------------------------
+
+enter string: 3,456,789
+3.456.789
