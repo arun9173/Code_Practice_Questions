@@ -1,0 +1,42 @@
+Description:
+
+1.Write a Python program that prints the string s with the character curr_char replaced by the character new_char.
+
+2."curr_char" and "new_char" are variables that contain strings with a single character.
+
+3.You may assume that "new_char" will not be an empty string.
+
+4.The match must be case-sensitive (do not replace lowercase letters if "curr_char" is uppercase).
+
+5.If no match is found, print the initial string.
+
+
+----------------------------- code ------------------------------------
+
+text = input("enter string: ")
+curr_char = input("enter current character :")
+new_char = input("enter new character: ")
+
+if new_char != "":
+    if curr_char in text:
+        if curr_char.islower():
+            new_char = new_char.lower()
+            text = text.replace(curr_char, new_char)
+        else:
+            new_char = new_char.upper()
+            text = text.replace(curr_char, new_char)
+        print(text)
+    else:
+        print(f"{curr_char} is not found in {text}")
+else:
+    print("please! enter something to replace.")
+
+
+----------------------------- output ----------------------------
+
+enter string: heLLo
+enter current character :L
+enter new character: s
+heSSo
+
+
