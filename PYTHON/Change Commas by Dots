@@ -1,10 +1,22 @@
 escription:
 Write a Python program that prints a version of the string s with all commas replaced by dots.
 
------------------------ code ---------------------------------------
+----------------------- code 1 : with replace() ---------------------------------------
 
 text = input("enter string: ")
 print(text.replace(',', '.'))
+
+----------------------- code 2 : without replace() ---------------------------------
+
+text = input("enter string: ")
+new_txt = ""
+for comma in text:
+    if comma == ',':
+        new_txt += '.'
+    else:
+        new_txt += comma
+
+print(new_txt)
 
 -------------------- output --------------------------
 
