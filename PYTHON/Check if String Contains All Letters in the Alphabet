@@ -1,0 +1,63 @@
+Description:
+
+Write a Python program that checks if the string s contains all the letters in the alphabet (case-insensitive, so "A" should be equivalent to "a").
+
+If it does, print True. Else, print False.
+
+Before comparing the characters, you should convert the string to lowercase.
+
+If the string contains spaces, ignore them before finding the result.
+
+You may assume that the string doesn't contain any other symbols, only spaces (possibly).
+
+Consider these letters as part of the alphabet: 'abcdefghijklmnopqrstuvwxyz'
+
+
+🔸 Hints:
+To use a constant with all letters of the alphabet, you may use string.ascii_lowercase from the string module. You can import this module by writing import string at the top of your script.
+
+It can also be helpful to use sets in this problem.
+
+📣 Let's go! Start working on this challenge and find the solution in the following video.
+
+--------------------------------------- code 1 : option 1 ---------------------------------------------
+
+import string
+s = "The quick brown fox jumps over the lazy dog."
+new = set(s.lower()) #see in note what set can do
+new.remove(" ")
+new.remove(".")
+print(new == set(string.ascii_lowercase))
+------------------------------------------------------------------------------------------
+# Note :
+Here 'set' makes dictionary of all letters.
+eg.
+suppose:
+str = "The quick brown fox jumps over the lazy dog."
+then 'set' generate 'str' as:
+{'f', 'u', 'b', 'e', 'h', 'w', 'm', 'n', 'r', 'i', 'o', 't', 'j', 'z', 'k', 'd', 'a', 'p', 'y', 'x', 'c', 'v', 'q', 'l', 'g', 's'} in dictionary format.
+
+----------------------------------------------------- code 2 : option 2 ----------------------
+
+import string
+s = input("enter string: ")
+
+flag = True
+#lst = []
+for char in string.ascii_lowercase:
+    if not char in s:
+        flag = False
+
+# TODO : to check how may letters are in sentence
+# for char in string.ascii_lowercase:
+#     if char in s:
+#         lst += char
+#print(lst)
+print(flag)
+
+----------------------------------------------- output -------------------------
+
+enter string: abcdefghijklmnopqrstuvwxyz
+True
+
+
